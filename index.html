@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ডিজিটাল কেয়ার সলিউশনস | হাসপাতালের জন্য আধুনিক ডিজিটাল মার্কেটিং</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Hind Siliguri for Bengali -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Applying Bengali font to the entire page */
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-600">ডিজিটাল কেয়ার</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+                <a href="#pricing" class="text-gray-600 hover:text-teal-600">মূল্য তালিকা</a>
+                <a href="#process" class="text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+                <a href="#faq" class="text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+                <a href="#contact" class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+            <a href="#services" class="block text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+            <a href="#pricing" class="block text-gray-600 hover:text-teal-600">মূল্য তালিকা</a>
+            <a href="#process" class="block text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+            <a href="#faq" class="block text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+            <a href="#contact" class="block bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+                    হাসপাতালের জন্য <span class="text-teal-600">AI-Powered</span> ডিজিটাল মার্কেটিং
+                </h1>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+                    আমরা আপনার হাসপাতাল বা ক্লিনিকের জন্য আধুনিক ওয়েবসাইট, ফেসবুক অটোমেশন এবং ২৪/৭ কাস্টমার সার্ভিস AI এজেন্ট তৈরি করি, যা রোগীর সাথে যোগাযোগ সহজ করে এবং আপনার ব্র্যান্ড ভ্যালু বাড়ায়।
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-teal-500 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-teal-600 transition duration-300">বিনামূল্যে পরামর্শ নিন</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">আমাদের সার্ভিসসমূহ</h2>
+                    <p class="text-gray-600 mt-2">আপনার প্রতিষ্ঠানের ডিজিটাল রূপান্তরে আমরা যে সেবাগুলো দিয়ে থাকি</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex justify-center mb-4">
+                             <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">ওয়েবসাইট সেটআপ</h3>
+                        <p class="text-gray-600">আপনার হাসপাতালের জন্য তথ্যবহুল, ইউজার-ফ্রেন্ডলি এবং আধুনিক ডিজাইন সহ একটি সম্পূর্ণ রেসপন্সিভ ওয়েবসাইট তৈরি।</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">ফেসবুক পেজ অটোমেশন</h3>
+                        <p class="text-gray-600">ফেসবুক পেজ প্রফেশনালভাবে সেটআপ করা এবং মেসেঞ্জার বট দিয়ে রোগীদের জিজ্ঞাসার তাৎক্ষণিক উত্তর দেওয়ার ব্যবস্থা।</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">AI কাস্টমার সার্ভিস</h3>
+                        <p class="text-gray-600">আমাদের তৈরি AI এজেন্ট ২৪/৭ রোগীদের সাধারণ প্রশ্নের উত্তর দেবে, অ্যাপয়েন্টমেন্ট বুকিংয়ে সাহায্য করবে এবং তথ্য প্রদান করবে।</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex justify-center mb-4">
+                             <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">ডিজিটাল মার্কেটিং</h3>
+                        <p class="text-gray-600">ফেসবুক ও গুগলে বিজ্ঞাপনের মাধ্যমে আপনার হাসপাতালের পরিচিতি বাড়ানো এবং আরও বেশি রোগীর কাছে পৌঁছানো।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section (New) -->
+        <section id="why-us" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">কেন আমাদের বেছে নেবেন?</h2>
+                    <p class="text-gray-600 mt-2">আমরা শুধু সার্ভিস দিই না, আমরা আপনার সফলতার অংশীদার হই</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center p-6">
+                        <i class="fas fa-brain text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">AI প্রযুক্তিতে বিশেষজ্ঞ</h3>
+                        <p class="text-gray-600">আমাদের মূল শক্তি হলো AI এবং অটোমেশন। আমরা এমন প্রযুক্তি তৈরি করি যা আপনার কাজকে সহজ করে এবং খরচ কমায়।</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <i class="fas fa-headset text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">ডেডিকেটেড সাপোর্ট</h3>
+                        <p class="text-gray-600">যেকোনো প্রয়োজনে আমরা সবসময় আপনার পাশে আছি। আপনার সন্তুষ্টিই আমাদের প্রধান লক্ষ্য।</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <i class="fas fa-chart-line text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">ফলাফল-ভিত্তিক কৌশল</h3>
+                        <p class="text-gray-600">আমরা এমন কৌশল তৈরি করি যা শুধুমাত্র দেখতে সুন্দর নয়, বরং আপনার ব্যবসার উন্নতিতে সরাসরি ভূমিকা রাখে।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section (Updated) -->
+        <section id="pricing" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">আমাদের মূল্য তালিকা</h2>
+                    <p class="text-gray-600 mt-2">আপনার প্রয়োজন অনুযায়ী সেরা প্যাকেজটি বেছে নিন</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Pricing Card 1 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-2xl font-bold text-center">বেসিক</h3>
+                        <p class="text-center text-gray-500 mt-2">ছোট ক্লিনিকের জন্য</p>
+                        <div class="text-center my-6">
+                            <p class="text-sm text-gray-600">এককালীন খরচ</p>
+                            <p class="text-4xl font-bold">৳১০,০০০</p>
+                            <p class="text-sm text-gray-600 mt-4">মাসিক ফি</p>
+                            <p class="text-3xl font-bold">৳৫,০০০</p>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>ফেসবুক পেজ সেটআপ</li>
+                            <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>বেসিক মেসেঞ্জার বট</li>
+                            <li><i class="fas fa-times-circle text-red-400 mr-2"></i>ওয়েবসাইট তৈরি</li>
+                            <li><i class="fas fa-times-circle text-red-400 mr-2"></i>অ্যাডভান্সড AI এজেন্ট</li>
+                        </ul>
+                        <button class="w-full mt-8 bg-white border border-teal-500 text-teal-500 py-3 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-colors duration-300">শুরু করুন</button>
+                    </div>
+                    <!-- Pricing Card 2 (Recommended & Updated) -->
+                    <div class="bg-teal-600 text-white p-8 rounded-lg shadow-2xl transform lg:scale-110">
+                        <div class="flex justify-center">
+                            <span class="bg-white text-teal-600 text-xs font-bold px-3 py-1 rounded-full uppercase">সেরা প্যাকেজ</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mt-4">স্ট্যান্ডার্ড</h3>
+                        <p class="text-center text-teal-200 mt-2">মাঝারি হাসপাতাল ও ডায়াগনস্টিক সেন্টারের জন্য</p>
+                        <div class="text-center my-6">
+                            <p class="text-sm text-teal-200">এককালীন খরচ</p>
+                            <p class="text-4xl font-bold">৳৩০,০০০</p> <!-- Updated Price -->
+                            <p class="text-sm text-teal-200 mt-4">মাসিক ফি</p>
+                            <p class="text-3xl font-bold">৳১০,০০০</p>
+                        </div>
+                        <ul class="space-y-3 text-teal-100">
+                            <li><i class="fas fa-check-circle text-white mr-2"></i>ফেসবুক পেজ ও অটোমেশন</li>
+                            <li><i class="fas fa-check-circle text-white mr-2"></i>৫ পেজের ওয়েবসাইট তৈরি</li>
+                            <li><i class="fas fa-check-circle text-white mr-2"></i>২৪/৭ কাস্টমার সার্ভিস AI এজেন্ট</li>
+                            <li><i class="fas fa-check-circle text-white mr-2"></i>মাসিক রিপোর্টিং</li>
+                        </ul>
+                        <button class="w-full mt-8 bg-white text-teal-600 py-3 rounded-full font-semibold hover:bg-teal-100 transition-colors duration-300">এই প্যাকেজটি নিন</button>
+                    </div>
+                    <!-- Pricing Card 3 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-2xl font-bold text-center">প্রিমিয়াম</h3>
+                        <p class="text-center text-gray-500 mt-2">বড় হাসপাতালের জন্য</p>
+                        <div class="text-center my-6">
+                             <p class="text-sm text-gray-600">এককালীন খরচ</p>
+                            <p class="text-4xl font-bold">৳৫০,০০০</p>
+                            <p class="text-sm text-gray-600 mt-4">মাসিক ফি</p>
+                            <p class="text-3xl font-bold">৳২০,০০০</p>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                             <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>সকল স্ট্যান্ডার্ড ফিচার</li>
+                             <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>১০+ পেজের ওয়েবসাইট</li>
+                             <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>অ্যাডভান্সড CRM ইন্টিগ্রেশন</li>
+                             <li><i class="fas fa-check-circle text-teal-500 mr-2"></i>ডেডিকেটেড সাপোর্ট</li>
+                        </ul>
+                         <button class="w-full mt-8 bg-white border border-teal-500 text-teal-500 py-3 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-colors duration-300">শুরু করুন</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">আমাদের কাজের প্রক্রিয়া</h2>
+                    <p class="text-gray-600 mt-2">আমরা একটি সহজ এবং স্বচ্ছ প্রক্রিয়ায় কাজ করি</p>
+                </div>
+                <div class="relative">
+                    <!-- Dotted line -->
+                    <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-teal-200"></div>
+                    <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                        <div class="p-4">
+                            <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">১</div>
+                            <h3 class="text-xl font-semibold mb-2">আলোচনা ও পরিকল্পনা</h3>
+                            <p class="text-gray-600">আপনার প্রয়োজনগুলো বুঝতে আমরা একটি মিটিং করি এবং একটি কার্যকর পরিকল্পনা তৈরি করি।</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">২</div>
+                            <h3 class="text-xl font-semibold mb-2">চুক্তি ও অনবোর্ডিং</h3>
+                            <p class="text-gray-600">পরিকল্পনা অনুযায়ী আমরা একটি চুক্তিপত্র তৈরি করি এবং কাজ শুরু করার জন্য প্রয়োজনীয় তথ্য সংগ্রহ করি।</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">৩</div>
+                            <h3 class="text-xl font-semibold mb-2">ডেভেলপমেন্ট ও বাস্তবায়ন</h3>
+                            <p class="text-gray-600">আমাদের দক্ষ টিম আপনার ওয়েবসাইট এবং AI এজেন্ট তৈরি করে এবং আপনার ডিজিটাল প্ল্যাটফর্মগুলো প্রস্তুত করে।</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">৪</div>
+                            <h3 class="text-xl font-semibold mb-2">রিপোর্টিং ও সাপোর্ট</h3>
+                            <p class="text-gray-600">প্রতি মাসে আমরা কাজের অগ্রগতির রিপোর্ট প্রদান করি এবং যে কোনো প্রয়োজনে সার্বক্ষণিক সাপোর্ট দিয়ে থাকি।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section (New) -->
+        <section id="testimonials" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">আমাদের ক্লায়েন্টরা যা বলেন</h2>
+                    <p class="text-gray-600 mt-2">আমাদের সেবায় সন্তুষ্ট ক্লায়েন্টদের মতামত</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"ডিজিটাল কেয়ারের তৈরি করা AI এজেন্ট আমাদের কাজের চাপ অনেক কমিয়ে দিয়েছে। এখন রোগীরা ২৪/৭ অ্যাপয়েন্টমেন্ট এবং তথ্য জানতে পারে। আমরা তাদের সেবায় খুবই খুশি।"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=ডা." alt="Client Photo">
+                            <div>
+                                <p class="font-bold">ডাক্তার আহমেদ হোসাইন</p>
+                                <p class="text-sm text-gray-500">পরিচালক, হেলথকেয়ার ক্লিনিক</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"তাদের টিম খুবই পেশাদার এবং সময়নিষ্ঠ। আমাদের ওয়েবসাইটটি এখন আগের চেয়ে অনেক বেশি কার্যকর এবং দেখতেও সুন্দর। ধন্যবাদ ডিজিটাল কেয়ার।"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=ডা." alt="Client Photo">
+                            <div>
+                                <p class="font-bold">ফাতেমা চৌধুরী</p>
+                                <p class="text-sm text-gray-500">ম্যানেজার, সিটি ডায়াগনস্টিক</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (New) -->
+        <section id="faq" class="bg-white py-20">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">সাধারণ জিজ্ঞাসাসমূহ</h2>
+                    <p class="text-gray-600 mt-2">আপনার মনে থাকা কিছু সাধারণ প্রশ্নের উত্তর</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            AI এজেন্ট কি সত্যিই কার্যকর?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="p-4 hidden text-gray-600">
+                            হ্যাঁ, আমাদের AI এজেন্ট সাধারণ প্রশ্নগুলোর (যেমন: ডাক্তার কখন বসেন?, খরচ কত?, অ্যাপয়েন্টমেন্ট কীভাবে নেব?) উত্তর স্বয়ংক্রিয়ভাবে দিতে পারে। এতে আপনার কর্মীদের কাজের চাপ কমে এবং রোগীরা দ্রুত সেবা পায়।
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                            ওয়েবসাইট তৈরি করতে কতদিন সময় লাগে?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="p-4 hidden text-gray-600">
+                           প্যাকেজ এবং আপনার চাহিদার উপর নির্ভর করে সাধারণত একটি সম্পূর্ণ ওয়েবসাইট তৈরি করতে ২ থেকে ৪ সপ্তাহ সময় লাগে।
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg">
+                        <button class="w-full flex justify-between items-center p-4 font-semibold text-left">
+                           মাসিক ফি কেন দিতে হয়?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="p-4 hidden text-gray-600">
+                            মাসিক ফি মূলত ওয়েবসাইট ও AI এজেন্টের রক্ষণাবেক্ষণ, হোস্টিং, টেকনিক্যাল সাপোর্ট এবং নিয়মিত আপডেটের জন্য নেওয়া হয়, যাতে আপনার ডিজিটাল প্ল্যাটফর্মগুলো সবসময় সচল এবং সুরক্ষিত থাকে।
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-teal-700 text-white py-20">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold">আপনার হাসপাতালের ডিজিটাল রূপান্তরে আগ্রহী?</h2>
+                        <p class="mt-4 text-teal-200">আমাদের সাথে যোগাযোগ করুন। আপনার প্রতিষ্ঠানের জন্য সেরা ডিজিটাল সমাধান নিয়ে আলোচনা করতে আমরা প্রস্তুত। বিনামূল্যে পরামর্শ পেতে পাশের ফর্মটি পূরণ করুন।</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-center">যোগাযোগ করুন</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-bold mb-2">আপনার নাম</label>
+                                <input type="text" id="name" placeholder="আপনার সম্পূর্ণ নাম লিখুন" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="hospital" class="block text-sm font-bold mb-2">হাসপাতাল/ক্লিনিকের নাম</label>
+                                <input type="text" id="hospital" placeholder="আপনার প্রতিষ্ঠানের নাম" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="phone" class="block text-sm font-bold mb-2">ফোন নম্বর</label>
+                                <input type="tel" id="phone" placeholder="আপনার ফোন নম্বর" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-bold mb-2">আপনার বার্তা</label>
+                                <textarea id="message" rows="4" placeholder="আপনার কী জানতে চান তা লিখুন..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-teal-500 text-white font-bold py-3 px-4 rounded-md hover:bg-teal-600 transition duration-300">বার্তা পাঠান</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Updated with Multi-column) -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-teal-500 mb-4">ডিজিটাল কেয়ার সলিউশনস</h3>
+                    <p class="text-gray-400">আমরা বাংলাদেশের স্বাস্থ্যসেবা প্রতিষ্ঠানগুলোকে আধুনিক প্রযুক্তির মাধ্যমে ডিজিটাল জগতে সফল হতে সাহায্য করি। আমাদের লক্ষ্য হলো আপনার এবং আপনার রোগীদের মধ্যে একটি নির্ভরযোগ্য ডিজিটাল সেতু তৈরি করা।</p>
+                </div>
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white">সার্ভিসসমূহ</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">মূল্য তালিকা</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white">আমাদের প্রক্রিয়া</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">সাধারণ জিজ্ঞাসা</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">যোগাযোগ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-2"></i>ঢাকা, বাংলাদেশ</li>
+                        <li class="flex items-start"><i class="fas fa-phone mt-1 mr-2"></i>+880 123 456 7890</li>
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-2"></i>contact@digitalcare.com</li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> ডিজিটাল কেয়ার সলিউশনস। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqButtons = document.querySelectorAll('#faq button');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+
+</body>
+</html>
