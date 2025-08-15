@@ -245,38 +245,6 @@
             </div>
         </section>
         
-        <!-- Testimonials Section (New) -->
-        <section id="testimonials" class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold">আমাদের ক্লায়েন্টরা যা বলেন</h2>
-                    <p class="text-gray-600 mt-2">আমাদের সেবায় সন্তুষ্ট ক্লায়েন্টদের মতামত</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-gray-600 italic mb-4">"ডিজিটাল কেয়ারের তৈরি করা AI এজেন্ট আমাদের কাজের চাপ অনেক কমিয়ে দিয়েছে। এখন রোগীরা ২৪/৭ অ্যাপয়েন্টমেন্ট এবং তথ্য জানতে পারে। আমরা তাদের সেবায় খুবই খুশি।"</p>
-                        <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=ডা." alt="ডাক্তার আহমেদ হোসাইন">
-                            <div>
-                                <p class="font-bold">ডাক্তার আহমেদ হোসাইন</p>
-                                <p class="text-sm text-gray-500">পরিচালক, হেলথকেয়ার ক্লিনিক</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-gray-600 italic mb-4">"তাদের টিম খুবই পেশাদার এবং সময়নিষ্ঠ। আমাদের ওয়েবসাইটটি এখন আগের চেয়ে অনেক বেশি কার্যকর এবং দেখতেও সুন্দর। ধন্যবাদ ডিজিটাল কেয়ার।"</p>
-                        <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=ডা." alt="ফাতেমা চৌধুরী">
-                            <div>
-                                <p class="font-bold">ফাতেমা চৌধুরী</p>
-                                <p class="text-sm text-gray-500">ম্যানেজার, সিটি ডায়াগনস্টিক</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- FAQ Section (New) -->
         <section id="faq" class="bg-white py-20">
             <div class="container mx-auto px-6 max-w-3xl">
@@ -326,7 +294,7 @@
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
                         <h3 class="text-2xl font-bold mb-6 text-center">যোগাযোগ করুন</h3>
-                        <form>
+                        <form id="contact-form">
                             <div class="mb-4">
                                 <label for="name" class="block text-sm font-bold mb-2">আপনার নাম</label>
                                 <input type="text" id="name" placeholder="আপনার সম্পূর্ণ নাম লিখুন" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" required>
@@ -344,6 +312,7 @@
                                 <textarea id="message" rows="4" placeholder="আপনার কী জানতে চান তা লিখুন..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
                             </div>
                             <button type="submit" class="w-full bg-teal-500 text-white font-bold py-3 px-4 rounded-md hover:bg-teal-600 transition duration-300">বার্তা পাঠান</button>
+                            <p id="form-message" class="text-center mt-4"></p>
                         </form>
                     </div>
                 </div>
