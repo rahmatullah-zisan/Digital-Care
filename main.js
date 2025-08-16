@@ -126,23 +126,30 @@ if (orderForm) {
     });
 }
 
-// Change site name color when footer is in view
+// Change site name color only when header overlaps the contact section
 const siteName = document.getElementById('site-name');
-const footer = document.querySelector('footer');
+const contactSection = document.getElementById('contact');
+const header = document.querySelector('header');
 
-if (siteName && footer) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                siteName.classList.remove('text-teal-600');
-                siteName.classList.add('text-white');
-            } else {
-                siteName.classList.remove('text-white');
-                siteName.classList.add('text-teal-600');
-            }
-        });
-    }, { threshold: 0.1 });
+if (siteName && contactSection && header) {
+    const defaultClass = 'text-teal-600';
+    const overlapClass = 'text-white';
 
-    observer.observe(footer);
+    function updateSiteNameColor() {
+        const contactRect = contactSection.getBoundingClientRect();
+        const headerHeight = header.offsetHeight;
+
+        if (contactRect.top <= headerHeight && contactRect.bottom >= headerHeight) {
+            siteName.classList.remove(defaultClass);
+            siteName.classList.add(overlapClass);
+        } else {
+            siteName.classList.remove(overlapClass);
+            siteName.classList.add(defaultClass);
+        }
+    }
+
+    window.addEventListener('scroll', updateSiteNameColor);
+    // Run on load in case user refreshes while on contact section
+    updateSiteNameColor();
 }
 
