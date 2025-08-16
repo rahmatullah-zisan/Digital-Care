@@ -126,3 +126,23 @@ if (orderForm) {
     });
 }
 
+// Change site name color when footer is in view
+const siteName = document.getElementById('site-name');
+const footer = document.querySelector('footer');
+
+if (siteName && footer) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                siteName.classList.remove('text-teal-600');
+                siteName.classList.add('text-white');
+            } else {
+                siteName.classList.remove('text-white');
+                siteName.classList.add('text-teal-600');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(footer);
+}
+
