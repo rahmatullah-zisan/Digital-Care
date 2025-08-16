@@ -1,294 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="আমরা এমন একটি স্বয়ংক্রিয় সিস্টেম তৈরি করি যা আপনার জন্য ২৪/৭ গ্রাহক খুঁজে বের করে এবং তাদের ক্রেতায় পরিণত করে।"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আপনার ২৪/৭ সেলস মেশিন - ডিজিটাল কেয়ার সলিউশনস</title>
+    <meta name="description" content="আমরা শুধু ওয়েবসাইট বানাই না; আমরা এমন একটি স্বয়ংক্রিয় সিস্টেম তৈরি করি যা আপনার জন্য ২৪/৭ গ্রাহক খুঁজে বের করে এবং তাদের ক্রেতায় পরিণত করে।">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      body {
-        font-family: "Hind Siliguri", sans-serif;
-      }
+        body { font-family: 'Hind Siliguri', sans-serif; }
     </style>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header
-      class="bg-white/30 backdrop-blur-md border border-white/20 shadow-sm sticky top-0 z-50"
-    >
-      <nav
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a
-          href="../index.html"
-          id="site-name"
-          class="text-2xl font-bold text-teal-600"
-          >ডিজিটাল কেয়ার</a
-        >
-        <div class="hidden md:flex space-x-6 items-center">
-          <a href="../about.html" class="text-gray-600 hover:text-teal-600"
-            >আমাদের সম্পর্কে</a
-          >
-          <a href="../services.html" class="text-gray-600 hover:text-teal-600"
-            >সার্ভিসসমূহ</a
-          >
-          <a
-            href="../index.html#pricing"
-            class="text-gray-600 hover:text-teal-600"
-            >সলিউশন</a
-          >
-          <a
-            href="../index.html#process"
-            class="text-gray-600 hover:text-teal-600"
-            >আমাদের প্রক্রিয়া</a
-          >
-          <a href="../index.html#faq" class="text-gray-600 hover:text-teal-600"
-            >জিজ্ঞাসা</a
-          >
-          <a
-            href="../index.html#contact"
-            class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
-            >যোগাযোগ করুন</a
-          >
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white/30 backdrop-blur-md border border-white/20 shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" id="site-name" class="text-2xl font-bold text-teal-600">ডিজিটাল কেয়ার</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../about.html" class="text-gray-600 hover:text-teal-600">আমাদের সম্পর্কে</a>
+                <a href="../services.html" class="text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+                <a href="../index.html#pricing" class="text-gray-600 hover:text-teal-600">সলিউশন</a>
+                <a href="../index.html#process" class="text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+                <a href="../index.html#faq" class="text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+                <a href="../index.html#contact" class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none" aria-label="মেনু খুলুন বা বন্ধ করুন" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+            <a href="../about.html" class="block text-gray-600 hover:text-teal-600">আমাদের সম্পর্কে</a>
+            <a href="../services.html" class="block text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+            <a href="../index.html#pricing" class="block text-gray-600 hover:text-teal-600">সলিউশন</a>
+            <a href="../index.html#process" class="block text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+            <a href="../index.html#faq" class="block text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+            <a href="../index.html#contact" class="block bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
         </div>
-        <div class="md:hidden">
-          <button
-            id="menu-btn"
-            class="text-gray-600 focus:outline-none"
-            aria-label="মেনু খুলুন বা বন্ধ করুন"
-            aria-expanded="false"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </nav>
-      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
-        <a href="../about.html" class="block text-gray-600 hover:text-teal-600"
-          >আমাদের সম্পর্কে</a
-        >
-        <a
-          href="../services.html"
-          class="block text-gray-600 hover:text-teal-600"
-          >সার্ভিসসমূহ</a
-        >
-        <a
-          href="../index.html#pricing"
-          class="block text-gray-600 hover:text-teal-600"
-          >সলিউশন</a
-        >
-        <a
-          href="../index.html#process"
-          class="block text-gray-600 hover:text-teal-600"
-          >আমাদের প্রক্রিয়া</a
-        >
-        <a
-          href="../index.html#faq"
-          class="block text-gray-600 hover:text-teal-600"
-          >জিজ্ঞাসা</a
-        >
-        <a
-          href="../index.html#contact"
-          class="block bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
-          >যোগাযোগ করুন</a
-        >
-      </div>
     </header>
 
     <main>
-      <section class="bg-white py-20 md:py-32">
-        <div class="container mx-auto px-6 text-center">
-          <h1
-            class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
-          >
-            আপনার ওয়েবসাইট কি আপনার জন্য টাকা আয় করছে, নাকি শুধু খরচ বাড়াচ্ছে?
-          </h1>
-          <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-            একটি সাধারণ ওয়েবসাইট শুধু আপনার পরিচয় দেয়। কিন্তু একটি স্মার্ট
-            ওয়েবসাইট আপনার সেরা সেলসম্যান হিসেবে ২৪/৭ কাজ করে। আমরা এমন ওয়েবসাইট
-            তৈরি করি যা গ্রাহক নিয়ে আসে, তাদের সাথে সম্পর্ক তৈরি করে এবং আপনার
-            বিক্রি বাড়াতে সাহায্য করে।
-          </p>
-        </div>
-      </section>
+        <section class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">আপনার ওয়েবসাইট কি আপনার জন্য টাকা আয় করছে, নাকি শুধু খরচ বাড়াচ্ছে?</h1>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">একটি সাধারণ ওয়েবসাইট শুধু আপনার পরিচয় দেয়। কিন্তু একটি স্মার্ট ওয়েবসাইট আপনার সেরা সেলসম্যান হিসেবে ২৪/৭ কাজ করে। আমরা এমন ওয়েবসাইট তৈরি করি যা গ্রাহক নিয়ে আসে, তাদের সাথে সম্পর্ক তৈরি করে এবং আপনার বিক্রি বাড়াতে সাহায্য করে।</p>
+            </div>
+        </section>
 
-      <section class="py-20">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold">
-              এটি শুধু ওয়েবসাইট নয়, এটি একটি সম্পূর্ণ গ্রোথ সিস্টেম
-            </h2>
-            <p class="text-gray-600 mt-2">
-              আমাদের তৈরি করা প্রতিটি ওয়েবসাইট একটি উদ্দেশ্য নিয়ে বানানো হয়:
-              আপনার ব্যবসার লাভ বৃদ্ধি করা।
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i class="fas fa-users-cog text-4xl text-teal-500 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">স্বয়ংক্রিয় লিড সংগ্রহ</h3>
-              <p class="text-gray-600">
-                প্রতিটি ভিজিটরকে সম্ভাব্য গ্রাহকে পরিণত করার জন্য ইন্টিগ্রেটেড
-                কন্টাক্ট ফর্ম এবং লিড ম্যাগনেট সিস্টেম।
-              </p>
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">এটি শুধু ওয়েবসাইট নয়, এটি একটি সম্পূর্ণ গ্রোথ সিস্টেম</h2>
+                    <p class="text-gray-600 mt-2">আমাদের তৈরি করা প্রতিটি ওয়েবসাইট একটি উদ্দেশ্য নিয়ে বানানো হয়: আপনার ব্যবসার লাভ বৃদ্ধি করা।</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <i class="fas fa-users-cog text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">স্বয়ংক্রিয় লিড সংগ্রহ</h3>
+                        <p class="text-gray-600">প্রতিটি ভিজিটরকে সম্ভাব্য গ্রাহকে পরিণত করার জন্য ইন্টিগ্রেটেড কন্টাক্ট ফর্ম এবং লিড ম্যাগনেট সিস্টেম।</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <i class="fas fa-search-dollar text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">সার্চ ইঞ্জিনের জন্য অপ্টিমাইজড</h3>
+                        <p class="text-gray-600">আপনার গ্রাহকরা গুগলে যা লিখে সার্চ করে, ঠিক সেই শব্দগুলো দিয়েই আপনার সাইটকে র‍্যাঙ্ক করানোর জন্য SEO-ফ্রেন্ডলি কাঠামো।</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <i class="fas fa-mobile-alt text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">মোবাইল-ফার্স্ট ডিজাইন</h3>
+                        <p class="text-gray-600">আপনার ৭০% এর বেশি গ্রাহক মোবাইল ব্যবহার করে। আমাদের ডিজাইন মোবাইলের জন্য বিশেষভাবে তৈরি, যা গ্রাহকদের সেরা অভিজ্ঞতা দেয়।</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i class="fas fa-search-dollar text-4xl text-teal-500 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">
-                সার্চ ইঞ্জিনের জন্য অপ্টিমাইজড
-              </h3>
-              <p class="text-gray-600">
-                আপনার গ্রাহকরা গুগলে যা লিখে সার্চ করে, ঠিক সেই শব্দগুলো দিয়েই
-                আপনার সাইটকে র‍্যাঙ্ক করানোর জন্য SEO-ফ্রেন্ডলি কাঠামো।
-              </p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-              <i class="fas fa-mobile-alt text-4xl text-teal-500 mb-4"></i>
-              <h3 class="text-xl font-bold mb-2">মোবাইল-ফার্স্ট ডিজাইন</h3>
-              <p class="text-gray-600">
-                আপনার ৭০% এর বেশি গ্রাহক মোবাইল ব্যবহার করে। আমাদের ডিজাইন
-                মোবাইলের জন্য বিশেষভাবে তৈরি, যা গ্রাহকদের সেরা অভিজ্ঞতা দেয়।
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="bg-teal-600 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-3xl font-bold">
-            আপনার ব্যবসাকে একটি স্বয়ংক্রিয় সেলস মেশিনে পরিণত করতে প্রস্তুত?
-          </h2>
-          <p class="text-teal-200 mt-4 max-w-2xl mx-auto">
-            আসুন আলোচনা করি, কীভাবে একটি শক্তিশালী ওয়েবসাইট আপনার ব্যবসার আয়
-            বাড়াতে পারে।
-          </p>
-          <a
-            href="../index.html#contact"
-            class="mt-8 inline-block bg-white text-teal-600 font-semibold px-8 py-4 rounded-full hover:bg-teal-100 transition duration-300"
-            >বিনামূল্যে স্ট্র্যাটেজি সেশন নিন</a
-          >
-        </div>
-      </section>
+        <section class="bg-teal-600 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold">আপনার ব্যবসাকে একটি স্বয়ংক্রিয় সেলস মেশিনে পরিণত করতে প্রস্তুত?</h2>
+                <p class="text-teal-200 mt-4 max-w-2xl mx-auto">আসুন আলোচনা করি, কীভাবে একটি শক্তিশালী ওয়েবসাইট আপনার ব্যবসার আয় বাড়াতে পারে।</p>
+                <a href="../index.html#contact" class="mt-8 inline-block bg-white text-teal-600 font-semibold px-8 py-4 rounded-full hover:bg-teal-100 transition duration-300">বিনামূল্যে স্ট্র্যাটেজি সেশন নিন</a>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white pt-16 pb-8">
-      <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div class="md:col-span-2">
-            <h3 class="text-xl font-bold text-teal-500 mb-4">
-              ডিজিটাল কেয়ার সলিউশনস
-            </h3>
-            <p class="text-gray-400">
-              আমরা বাংলাদেশের স্বাস্থ্যসেবা প্রতিষ্ঠানগুলোকে আধুনিক প্রযুক্তির
-              মাধ্যমে ডিজিটাল জগতে সফল হতে সাহায্য করি। আমাদের লক্ষ্য হলো আপনার
-              এবং আপনার রোগীদের মধ্যে একটি নির্ভরযোগ্য ডিজিটাল সেতু তৈরি করা।
-            </p>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-4">গুরুত্বপূর্ণ লিংক</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="../about.html" class="text-gray-400 hover:text-white"
-                  >আমাদের সম্পর্কে</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../services.html"
-                  class="text-gray-400 hover:text-white"
-                  >সার্ভিসসমূহ</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../index.html#pricing"
-                  class="text-gray-400 hover:text-white"
-                  >সলিউশন</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../index.html#process"
-                  class="text-gray-400 hover:text-white"
-                  >আমাদের প্রক্রিয়া</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../index.html#faq"
-                  class="text-gray-400 hover:text-white"
-                  >সাধারণ জিজ্ঞাসা</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold mb-4">যোগাযোগ</h3>
-            <ul class="space-y-2 text-gray-400">
-              <li class="flex items-start">
-                <i class="fas fa-map-marker-alt mt-1 mr-2"></i>ডিকেপি রোড,
-                বরগুনা
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-phone mt-1 mr-2"></i>01639590392
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-envelope mt-1 mr-2"></i
-                >rahmatullahzisan@gmail.com
-              </li>
-            </ul>
-            <div class="mt-4 flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-facebook-f fa-lg"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-linkedin-in fa-lg"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-youtube fa-lg"></i
-              ></a>
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-teal-500 mb-4">ডিজিটাল কেয়ার সলিউশনস</h3>
+                    <p class="text-gray-400">আমরা বাংলাদেশের ব্যবসা প্রতিষ্ঠানগুলোকে আধুনিক প্রযুক্তির মাধ্যমে ডিজিটাল জগতে সফল হতে সাহায্য করি। আমাদের লক্ষ্য হলো আপনার এবং আপনার কাস্টমারের মধ্যে একটি নির্ভরযোগ্য ডিজিটাল সেতু তৈরি করা।</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="text-gray-400 hover:text-white">আমাদের সম্পর্কে</a></li>
+                        <li><a href="../services.html" class="text-gray-400 hover:text-white">সার্ভিসসমূহ</a></li>
+                        <li><a href="../index.html#pricing" class="text-gray-400 hover:text-white">সলিউশন</a></li>
+                        <li><a href="../index.html#process" class="text-gray-400 hover:text-white">আমাদের প্রক্রিয়া</a></li>
+                        <li><a href="../index.html#faq" class="text-gray-400 hover:text-white">সাধারণ জিজ্ঞাসা</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">যোগাযোগ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-2"></i>ডিকেপি রোড, বরগুনা</li>
+                        <li class="flex items-start"><i class="fas fa-phone mt-1 mr-2"></i>01639590392</li>
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-2"></i>rahmatullahzisan@gmail.com</li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> ডিজিটাল কেয়ার সলিউশনস। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
         </div>
-        <div class="border-t border-gray-700 pt-6 text-center text-gray-500">
-          <p>
-            &copy; <span id="currentYear"></span> ডিজিটাল কেয়ার সলিউশনস।
-            সর্বস্বত্ব সংরক্ষিত।
-          </p>
-        </div>
-      </div>
     </footer>
     <script src="../main.js" defer></script>
-  </body>
+</body>
 </html>
