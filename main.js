@@ -132,25 +132,25 @@ if (orderForm) {
     });
 }
 
-// Change site name color only when header overlaps the contact section
+// Change site name color when header overlaps the contact section or footer
 const siteName = document.getElementById('site-name');
 const contactSection = document.getElementById('contact');
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
 
-if (siteName && contactSection && header && footer) {
+if (siteName && header && footer) {
     const defaultClass = 'text-teal-600';
     const overlapClass = 'text-white';
 
     function updateSiteNameColor() {
         const headerHeight = header.offsetHeight;
-        const contactRect = contactSection.getBoundingClientRect();
+        const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
         const footerRect = footer.getBoundingClientRect();
 
-        const inContact = contactRect.top <= headerHeight && contactRect.bottom >= headerHeight;
+        const inContact = contactRect ? (contactRect.top <= headerHeight && contactRect.bottom >= headerHeight) : false;
         const inFooter = footerRect.top <= headerHeight && footerRect.bottom >= headerHeight;
 
-        if (inContact && !inFooter) {
+        if (inContact || inFooter) {
             siteName.classList.remove(defaultClass);
             siteName.classList.add(overlapClass);
         } else {
@@ -160,7 +160,7 @@ if (siteName && contactSection && header && footer) {
     }
 
     window.addEventListener('scroll', updateSiteNameColor);
-    // Run on load in case user refreshes while on contact section
+    // Run on load in case user refreshes while on contact section or footer
     updateSiteNameColor();
 }
 
