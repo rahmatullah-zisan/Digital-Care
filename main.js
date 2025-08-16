@@ -126,13 +126,11 @@ if (orderForm) {
     });
 }
 
-// Change site name color when header reaches the contact section
+// Change site name color when footer is in view
 const siteName = document.getElementById('site-name');
-const contactSection = document.getElementById('contact');
-const header = document.querySelector('header');
+const footer = document.querySelector('footer');
 
-if (siteName && contactSection && header) {
-    const headerHeight = header.offsetHeight;
+if (siteName && footer) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -143,11 +141,8 @@ if (siteName && contactSection && header) {
                 siteName.classList.add('text-teal-600');
             }
         });
-    }, {
-        rootMargin: `-${headerHeight}px 0px 0px 0px`,
-        threshold: 0
-    });
+    }, { threshold: 0.1 });
 
-    observer.observe(contactSection);
+    observer.observe(footer);
 }
 
