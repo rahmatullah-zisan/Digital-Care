@@ -159,3 +159,18 @@ if (siteName && contactSection && header) {
     updateSiteNameColor();
 }
 
+// Dynamic industry text flip on homepage
+const industryText = document.getElementById('industry-text');
+if (industryText) {
+    const words = ['ব্যবসার', 'রেস্টুরেন্টের', 'হাসপাতালের', 'ই-কমার্সের'];
+    let index = 0;
+    setInterval(() => {
+        industryText.classList.add('flip');
+        setTimeout(() => {
+            index = (index + 1) % words.length;
+            industryText.textContent = words[index];
+            industryText.classList.remove('flip');
+        }, 600);
+    }, 2000);
+}
+
