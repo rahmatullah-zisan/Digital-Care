@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ব্যবসা অনুযায়ী সোশ্যাল মিডিয়া: ফেসবুক, ইনস্টাগ্রাম নাকি লিংকডইন?</title>
     <meta name="description" content="প্রতিটি ব্যবসাই চায় সোশ্যাল মিডিয়ার মাধ্যমে গ্রাহকদের কাছে পৌঁছাতে। কিন্তু সব প্ল্যাটফর্ম সব ব্যবসার জন্য সমানভাবে কার্যকর নয়। আপনার ব্যবসার জন্য সঠিক সোশ্যাল মিডিয়া কোনটি? ফেসবুক, ইনস্টাগ্রাম, নাকি লিংকডইন? ভুল প্ল্যাটফর্মে সময় এবং অর্থ নষ্ট না করে সঠিক কৌশল জেনে নিন এবং আপনার ব্যবসার প্রচারকে সফল করুন।">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTQOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>body { font-family: 'Hind Siliguri', sans-serif; }</style>
 </head>
-<body class="bg-white">
+<body class="bg-white text-gray-800">
+    <!-- Header / Navbar -->
+    <header class="bg-white/30 backdrop-blur-md border border-white/20 shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" id="site-name" class="text-2xl font-bold text-teal-600">ডিজিটাল কেয়ার</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="../about.html" class="text-gray-600 hover:text-teal-600">আমাদের সম্পর্কে</a>
+                <a href="../services.html" class="text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+                <a href="../index.html#pricing" class="text-gray-600 hover:text-teal-600">মূল্য তালিকা</a>
+                <a href="../blog.html" class="text-gray-600 hover:text-teal-600">ব্লগ</a>
+                <a href="../index.html#process" class="text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+                <a href="../index.html#faq" class="text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+                <a href="../index.html#contact" class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none" aria-label="মেনু খুলুন বা বন্ধ করুন" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+            <a href="../about.html" class="block text-gray-600 hover:text-teal-600">আমাদের সম্পর্কে</a>
+            <a href="../services.html" class="block text-gray-600 hover:text-teal-600">সার্ভিসসমূহ</a>
+            <a href="../index.html#pricing" class="block text-gray-600 hover:text-teal-600">মূল্য তালিকা</a>
+            <a href="../blog.html" class="block text-gray-600 hover:text-teal-600">ব্লগ</a>
+            <a href="../index.html#process" class="block text-gray-600 hover:text-teal-600">আমাদের প্রক্রিয়া</a>
+            <a href="../index.html#faq" class="block text-gray-600 hover:text-teal-600">জিজ্ঞাসা</a>
+            <a href="../index.html#contact" class="block bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300">যোগাযোগ করুন</a>
+        </div>
+    </header>
     <main class="container mx-auto px-6 py-12 max-w-3xl">
         <h1 class="text-4xl font-bold mb-4">ব্যবসা অনুযায়ী সোশ্যাল মিডিয়া: ফেসবুক, ইনস্টাগ্রাম নাকি লিংকডইন?</h1>
         <p class="text-gray-500 mb-8">প্রকাশিত: ১০ আগস্ট, ২০২৫</p>
-
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1374&auto=format&fit=crop" alt="সোশ্যাল মিডিয়া প্ল্যাটফর্ম" class="w-full h-64 object-cover rounded-lg mb-8">
         <div class="prose lg:prose-xl text-gray-800">
             <p>ব্যবসা শুরু করার পর অনেকেই সব সোশ্যাল মিডিয়া প্ল্যাটফর্মে অ্যাকাউন্ট খুলে বসেন। ফলাফল? কোনোটাতেই ঠিকমতো মনোযোগ দেওয়া হয় না এবং আশানুরূপ ফল পাওয়া যায় না। মনে রাখবেন, সব জায়গায় উপস্থিত থাকার চেয়ে সঠিক জায়গায় ভালোভাবে উপস্থিত থাকা অনেক বেশি জরুরি। চলুন, প্রধান তিনটি প্ল্যাটফর্মের শক্তি এবং দুর্বলতা বিশ্লেষণ করে দেখি।</p>
 
@@ -37,7 +74,7 @@
             <p><strong>কোন ব্যবসার জন্য উপযুক্ত:</strong> B2B (ব্যবসা-থেকে-ব্যবসা) ব্যবসা, আইটি ফার্ম, কনসালটেন্সি, মার্কেটিং এজেন্সি, রিক্রুটিং এজেন্সি এবং যারা অন্যান্য কোম্পানিকে সেবা প্রদান করে, তাদের জন্য লিংকডইন অপরিহার্য।</p>
             <p><strong>কেন ব্যবহার করবেন:</strong></p>
             <ul>
-                <li><strong>পেশাদার নেটওয়ার্কিং:</strong> এখানে আপনি সরাসরি বিভিন্ন কোম্পানির সিদ্ধান্ত গ্রহণকারী কর্মকর্তাদের সাথে সংযোগ স্থাপন করতে পারেন।</li>
+                <li><strong>পেশাদার নেটওয়ার্কিং:</strong> এখানে আপনি সরাসরি বিভিন্ কোম্পানির সিদ্ধান্ত গ্রহণকারী কর্মকর্তাদের সাথে সংযোগ স্থাপন করতে পারেন।</li>
                 <li><strong>বিশেষজ্ঞ হিসেবে প্রতিষ্ঠা:</strong> আপনার ইন্ডাস্ট্রি সম্পর্কিত জ্ঞান এবং অভিজ্ঞতা শেয়ার করে আপনি নিজেকে এবং আপনার ব্যবসাকে একজন বিশেষজ্ঞ হিসেবে প্রতিষ্ঠা করতে পারেন।</li>
                 <li><strong>কোম্পানি ব্র্যান্ডিং:</strong> লিংকডইন আপনার কোম্পানির কর্পোরেট কালচার এবং সাফল্য তুলে ধরার জন্য একটি চমৎকার প্ল্যাটফর্ম।</li>
             </ul>
@@ -46,6 +83,43 @@
             <p>সঠিক সোশ্যাল মিডিয়া প্ল্যাটফর্ম বাছাই করা আপনার ডিজিটাল মার্কেটিং কৌশলের প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ ধাপ। আপনার ব্যবসার ধরন এবং আপনার গ্রাহক কারা, তা বিশ্লেষণ করুন। যদি আপনার গ্রাহক সাধারণ মানুষ হয়, তবে ফেসবুক দিয়ে শুরু করুন। আপনার পণ্য যদি দেখতে আকর্ষণীয় হয়, তবে ইনস্টাগ্রামে মনোযোগ দিন। আর যদি আপনার গ্রাহক অন্য কোনো ব্যবসা হয়, তবে লিংকডইন-ই আপনার জন্য সেরা জায়গা। একটি বা দুটি প্ল্যাটফর্মে ভালোভাবে মনোযোগ দিলেই আপনি সেরা ফলাফল পাবেন।</p>
         </div>
     </main>
-
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-teal-500 mb-4">ডিজিটাল কেয়ার সলিউশনস</h3>
+                    <p class="text-gray-400">আমরা বাংলাদেশের স্বাস্থ্যসেবা প্রতিষ্ঠানগুলোকে আধুনিক প্রযুক্তির মাধ্যমে ডিজিটাল জগতে সফল হতে সাহায্য করি। আমাদের লক্ষ্য হলো আপনার এবং আপনার রোগীদের মধ্যে একটি নির্ভরযোগ্য ডিজিটাল সেতু তৈরি করা।</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="text-gray-400 hover:text-white">আমাদের সম্পর্কে</a></li>
+                        <li><a href="../services.html" class="text-gray-400 hover:text-white">সার্ভিসসমূহ</a></li>
+                        <li><a href="../index.html#pricing" class="text-gray-400 hover:text-white">মূল্য তালিকা</a></li>
+                        <li><a href="../index.html#process" class="text-gray-400 hover:text-white">আমাদের প্রক্রিয়া</a></li>
+                        <li><a href="../index.html#faq" class="text-gray-400 hover:text-white">সাধারণ জিজ্ঞাসা</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">যোগাযোগ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-2"></i>ডিকেপি রোড, বরগুনা</li>
+                        <li class="flex items-start"><i class="fas fa-phone mt-1 mr-2"></i>01639590392</li>
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-2"></i>rahmatullahzisan@gmail.com</li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> ডিজিটাল কেয়ার সলিউশনস। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../main.js" defer></script>
 </body>
 </html>
+
