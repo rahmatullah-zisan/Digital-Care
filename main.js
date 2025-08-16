@@ -136,16 +136,21 @@ if (orderForm) {
 const siteName = document.getElementById('site-name');
 const contactSection = document.getElementById('contact');
 const header = document.querySelector('header');
+const footer = document.querySelector('footer');
 
-if (siteName && contactSection && header) {
+if (siteName && contactSection && header && footer) {
     const defaultClass = 'text-teal-600';
     const overlapClass = 'text-white';
 
     function updateSiteNameColor() {
-        const contactRect = contactSection.getBoundingClientRect();
         const headerHeight = header.offsetHeight;
+        const contactRect = contactSection.getBoundingClientRect();
+        const footerRect = footer.getBoundingClientRect();
 
-        if (contactRect.top <= headerHeight && contactRect.bottom >= headerHeight) {
+        const inContact = contactRect.top <= headerHeight && contactRect.bottom >= headerHeight;
+        const inFooter = footerRect.top <= headerHeight && footerRect.bottom >= headerHeight;
+
+        if (inContact && !inFooter) {
             siteName.classList.remove(defaultClass);
             siteName.classList.add(overlapClass);
         } else {
