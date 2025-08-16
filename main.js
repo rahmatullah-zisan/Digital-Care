@@ -60,3 +60,69 @@ if (contactForm) {
     });
 }
 
+// Order Modal Logic
+const orderModal = document.getElementById('order-modal');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const orderButtons = document.querySelectorAll('.order-btn');
+const packageNameInput = document.getElementById('package-name');
+const orderForm = document.getElementById('order-form');
+const orderFormMessage = document.getElementById('order-form-message');
+
+// Open modal when any order button is clicked
+orderButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const packageName = button.getAttribute('data-package');
+        packageNameInput.value = packageName; // Set package name in the hidden input
+        orderModal.classList.remove('hidden');
+    });
+});
+
+// Close modal
+closeModalBtn.addEventListener('click', () => {
+    orderModal.classList.add('hidden');
+});
+
+// Close modal if clicked outside the form
+orderModal.addEventListener('click', (e) => {
+    if (e.target === orderModal) {
+        orderModal.classList.add('hidden');
+    }
+});
+
+// Order Form Submission Handler
+if (orderForm) {
+    orderForm.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const submitButton = orderForm.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = 'পাঠানো হচ্ছে...';
+        orderFormMessage.textContent = '';
+
+        // The same scriptURL can be used
+        fetch(scriptURL, { method: 'POST', body: new FormData(orderForm) })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    orderFormMessage.textContent = 'আপনার অর্ডার সফলভাবে পাঠানো হয়েছে। আমরা শীঘ্রই যোগাযোগ করবো।';
+                    orderFormMessage.style.color = 'green';
+                    orderForm.reset();
+                    setTimeout(() => {
+                        orderModal.classList.add('hidden');
+                    }, 3000); // Close modal after 3 seconds
+                } else {
+                    throw new Error('Server response error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                orderFormMessage.textContent = 'একটি সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।';
+                orderFormMessage.style.color = 'red';
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'অর্ডার কনফার্ম করুন';
+            });
+    });
+}
+
