@@ -126,3 +126,28 @@ if (orderForm) {
     });
 }
 
+// Change site name color when header reaches the contact section
+const siteName = document.getElementById('site-name');
+const contactSection = document.getElementById('contact');
+const header = document.querySelector('header');
+
+if (siteName && contactSection && header) {
+    const headerHeight = header.offsetHeight;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                siteName.classList.remove('text-teal-600');
+                siteName.classList.add('text-white');
+            } else {
+                siteName.classList.remove('text-white');
+                siteName.classList.add('text-teal-600');
+            }
+        });
+    }, {
+        rootMargin: `-${headerHeight}px 0px 0px 0px`,
+        threshold: 0
+    });
+
+    observer.observe(contactSection);
+}
+
