@@ -72,22 +72,28 @@ const orderFormMessage = document.getElementById('order-form-message');
 orderButtons.forEach(button => {
     button.addEventListener('click', () => {
         const packageName = button.getAttribute('data-package');
-        packageNameInput.value = packageName; // Set package name in the hidden input
-        orderModal.classList.remove('hidden');
+        if (packageNameInput) {
+            packageNameInput.value = packageName; // Set package name in the hidden input
+        }
+        if (orderModal) {
+            orderModal.classList.remove('hidden');
+        }
     });
 });
 
 // Close modal
-closeModalBtn.addEventListener('click', () => {
-    orderModal.classList.add('hidden');
-});
-
-// Close modal if clicked outside the form
-orderModal.addEventListener('click', (e) => {
-    if (e.target === orderModal) {
+if (closeModalBtn && orderModal) {
+    closeModalBtn.addEventListener('click', () => {
         orderModal.classList.add('hidden');
-    }
-});
+    });
+
+    // Close modal if clicked outside the form
+    orderModal.addEventListener('click', (e) => {
+        if (e.target === orderModal) {
+            orderModal.classList.add('hidden');
+        }
+    });
+}
 
 // Order Form Submission Handler
 if (orderForm) {
