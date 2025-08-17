@@ -26,18 +26,11 @@
 
         #industry-text {
             display: inline-block;
-            border-right: 2px solid #0d9488; /* teal-600 */
-            white-space: nowrap;
-            overflow: hidden;
+            transition: transform 0.6s;
         }
 
-        @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #0d9488; }
-        }
-
-        #industry-text.typing {
-            animation: blink 0.8s steps(1) infinite;
+        #industry-text.flip {
+            transform: rotateX(360deg);
         }
 
         /* Scroll Animation CSS (FIXED) */
