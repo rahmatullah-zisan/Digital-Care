@@ -1,5 +1,8 @@
 // Set current year in footer
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+const currentYearEl = document.getElementById('currentYear');
+if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
+}
 
 // Mobile Menu Toggle
 const menuBtn = document.getElementById('menu-btn');
@@ -164,19 +167,16 @@ if (siteName && header && footer) {
     updateSiteNameColor();
 }
 
-// Dynamic industry text flip on homepage
+// Dynamic industry text typing effect on homepage using Typed.js
 const industryText = document.getElementById('industry-text');
-if (industryText) {
-    const words = ['ব্যবসার', 'রেস্টুরেন্টের', 'হাসপাতালের', 'ই-কমার্সের'];
-    let index = 0;
-    setInterval(() => {
-        industryText.classList.add('flip');
-        setTimeout(() => {
-            index = (index + 1) % words.length;
-            industryText.textContent = words[index];
-            industryText.classList.remove('flip');
-        }, 600);
-    }, 2000);
+if (industryText && window.Typed) {
+    new Typed('#industry-text', {
+        strings: ['ব্যবসার', 'রেস্টুরেন্টের', 'হাসপাতালের', 'ই-কমার্সের'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true
+    });
 }
 
 // Scroll Animation Logic
