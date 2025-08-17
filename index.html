@@ -26,11 +26,15 @@
 
         #industry-text {
             display: inline-block;
-            transition: transform 0.6s;
+            border-right: 2px solid #0d9488;
+            white-space: nowrap;
+            animation: blinkCursor 0.7s steps(44) infinite normal;
         }
 
-        #industry-text.flip {
-            transform: rotateX(360deg);
+        @keyframes blinkCursor {
+            50% {
+                border-right-color: transparent;
+            }
         }
 
         /* Scroll Animation CSS (FIXED) */
