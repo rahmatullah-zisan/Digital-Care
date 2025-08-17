@@ -179,3 +179,42 @@ if (industryText) {
     }, 2000);
 }
 
+// Scroll Animation Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollElements = document.querySelectorAll(".animate-on-scroll");
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return (
+            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add("is-visible");
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove("is-visible");
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            }
+            // Optional: To hide the element again when it goes out of view
+            // else {
+            //     hideScrollElement(el);
+            // }
+        });
+    };
+
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+    });
+
+    // Trigger on load
+    handleScrollAnimation();
+});
+
