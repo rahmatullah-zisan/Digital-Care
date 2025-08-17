@@ -217,4 +217,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // Trigger on load
     handleScrollAnimation();
 });
-
