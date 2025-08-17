@@ -218,3 +218,26 @@ document.addEventListener("DOMContentLoaded", () => {
     handleScrollAnimation();
 });
 
+
+// Pricing Card Focus Effect on Desktop
+document.addEventListener("DOMContentLoaded", () => {
+    const mainCard = document.getElementById('pricing-card-main');
+    const sideCard1 = document.getElementById('pricing-card-1');
+    const sideCard3 = document.getElementById('pricing-card-3');
+
+    if (mainCard && sideCard1 && sideCard3) {
+        mainCard.addEventListener('mouseenter', () => {
+            if (window.innerWidth >= 1024) { // Only apply on lg screens and up
+                sideCard1.classList.add('defocused');
+                sideCard3.classList.add('defocused');
+            }
+        });
+
+        mainCard.addEventListener('mouseleave', () => {
+            if (window.innerWidth >= 1024) {
+                sideCard1.classList.remove('defocused');
+                sideCard3.classList.remove('defocused');
+            }
+        });
+    }
+});
