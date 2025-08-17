@@ -31,6 +31,18 @@
         #industry-text.flip {
             transform: rotateX(360deg);
         }
+
+        /* Scroll Animation CSS */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -90,7 +102,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Service Card 1 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
                         <div class="flex justify-center mb-4">
                              <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         </div>
@@ -98,7 +110,7 @@
                         <p class="text-gray-600">আমরা শুধু ওয়েবসাইট বানাই না; আমরা এমন একটি স্বয়ংক্রিয় সিস্টেম তৈরি করি যা আপনার জন্য ২৪/৭ গ্রাহক খুঁজে বের করে এবং তাদের ক্রেতায় পরিণত করে।</p>
                     </div>
                     <!-- Service Card 2 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
                         <div class="flex justify-center mb-4">
                             <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
                         </div>
@@ -106,7 +118,7 @@
                         <p class="text-gray-600">ফেসবুকের হাজার হাজার সম্ভাব্য গ্রাহকের মধ্য থেকে আসল ক্রেতাদের খুঁজে বের করার কাজটি আমাদের AI করবে। প্রতিটি মেসেজ, প্রতিটি কমেন্ট থেকে সম্ভাব্য লিড সংগ্রহ করে আপনার সেলস পাইপলাইনকে সচল রাখুন।</p>
                     </div>
                     <!-- Service Card 3 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
                         <div class="flex justify-center mb-4">
                             <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         </div>
@@ -114,7 +126,7 @@
                         <p class="text-gray-600">গভীর রাতে বা ছুটির দিনে আসা গ্রাহকদের আর অপেক্ষা করতে হবে না। আমাদের AI এজেন্ট প্রতিটি গ্রাহককে তাৎক্ষণিক উত্তর দেবে, তাদের তথ্য সংগ্রহ করবে এবং নিশ্চিত করবে যে প্রতিটি সুযোগই বিক্রিতে পরিণত হয়।</p>
                     </div>
                     <!-- Service Card 4 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
                         <div class="flex justify-center mb-4">
                              <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
                         </div>
@@ -133,17 +145,17 @@
                     <p class="text-gray-600 mt-2">আমরা শুধু সার্ভিস দিই না, আমরা আপনার সফলতার অংশীদার হই</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center p-6">
+                    <div class="text-center p-6 animate-on-scroll">
                         <i class="fas fa-brain text-4xl text-teal-500 mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">AI প্রযুক্তিতে বিশেষজ্ঞ</h3>
                         <p class="text-gray-600">আমরা খরচ কমিয়ে লাভ বাড়ানোর প্রযুক্তি তৈরি করি।</p>
                     </div>
-                    <div class="text-center p-6">
+                    <div class="text-center p-6 animate-on-scroll">
                         <i class="fas fa-headset text-4xl text-teal-500 mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">ডেডিকেটেড সাপোর্ট</h3>
                         <p class="text-gray-600">আমরা আপনার গ্রোথ পার্টনার, শুধু একজন ভেন্ডর নই।</p>
                     </div>
-                    <div class="text-center p-6">
+                    <div class="text-center p-6 animate-on-scroll">
                         <i class="fas fa-chart-line text-4xl text-teal-500 mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">ফলাফল-ভিত্তিক কৌশল</h3>
                         <p class="text-gray-600">আমরা এমন সিস্টেম তৈরি করি যা সরাসরি আপনার ব্যাংক একাউন্টে প্রভাব ফেলে।</p>
@@ -198,7 +210,7 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     <!-- Solution Card 1 -->
-                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105">
+                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105 animate-on-scroll">
                         <h3 class="text-2xl font-bold text-center">ফাউন্ডেশন প্যাকেজ</h3>
                         <p class="text-center text-gray-500 mt-2">ছোট ব্যবসা বা স্টার্টআপের জন্য</p>
                         <div class="text-center my-6">
@@ -214,7 +226,7 @@
                         <button data-package="ফাউন্ডেশন প্যাকেজ" class="order-btn w-full mt-8 bg-white border border-teal-500 text-teal-500 py-3 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-colors duration-300">বিনামূল্যে স্ট্র্যাটেজি সেশন বুক করুন</button>
                     </div>
                     <!-- Solution Card 2 (Recommended & Updated) -->
-                    <div class="bg-teal-600 text-white p-8 rounded-lg shadow-2xl transform lg:scale-110">
+                    <div class="bg-teal-600 text-white p-8 rounded-lg shadow-2xl transform lg:scale-110 animate-on-scroll">
                         <div class="flex justify-center">
                             <span class="bg-white text-teal-600 text-xs font-bold px-3 py-1 rounded-full uppercase">সেরা প্যাকেজ</span>
                         </div>
@@ -235,7 +247,7 @@
                         <button data-package="গ্রোথ ইঞ্জিন প্যাকেজ" class="order-btn w-full mt-8 bg-white text-teal-600 py-3 rounded-full font-semibold hover:bg-teal-100 transition-colors duration-300">বিনামূল্যে স্ট্র্যাটেজি সেশন বুক করুন</button>
                     </div>
                     <!-- Solution Card 3 -->
-                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105">
+                    <div class="bg-white border border-gray-200 p-8 rounded-lg transition-transform duration-300 hover:scale-105 animate-on-scroll">
                         <h3 class="text-2xl font-bold text-center">মার্কেট লিডার প্যাকেজ</h3>
                         <p class="text-center text-gray-500 mt-2">বড় প্রতিষ্ঠান বা কর্পোরেট কোম্পানির জন্য</p>
                         <div class="text-center my-6">
@@ -265,22 +277,22 @@
                     <!-- Dotted line -->
                     <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-teal-200"></div>
                     <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-                        <div class="p-4">
+                        <div class="p-4 animate-on-scroll">
                             <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">১</div>
                             <h3 class="text-xl font-semibold mb-2">আলোচনা ও পরিকল্পনা</h3>
                             <p class="text-gray-600">আপনার প্রয়োজনগুলো বুঝতে আমরা একটি মিটিং করি এবং একটি কার্যকর পরিকল্পনা তৈরি করি।</p>
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 animate-on-scroll">
                             <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">২</div>
                             <h3 class="text-xl font-semibold mb-2">চুক্তি ও অনবোর্ডিং</h3>
                             <p class="text-gray-600">পরিকল্পনা অনুযায়ী আমরা একটি চুক্তিপত্র তৈরি করি এবং কাজ শুরু করার জন্য প্রয়োজনীয় তথ্য সংগ্রহ করি।</p>
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 animate-on-scroll">
                             <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">৩</div>
                             <h3 class="text-xl font-semibold mb-2">ডেভেলপমেন্ট ও বাস্তবায়ন</h3>
                             <p class="text-gray-600">আমাদের দক্ষ টিম আপনার ওয়েবসাইট এবং AI এজেন্ট তৈরি করে এবং আপনার ডিজিটাল প্ল্যাটফর্মগুলো প্রস্তুত করে।</p>
                         </div>
-                        <div class="p-4">
+                        <div class="p-4 animate-on-scroll">
                             <div class="flex justify-center items-center w-16 h-16 mx-auto bg-white border-2 border-teal-500 rounded-full text-2xl font-bold text-teal-500 mb-4 z-10">৪</div>
                             <h3 class="text-xl font-semibold mb-2">রিপোর্টিং ও সাপোর্ট</h3>
                             <p class="text-gray-600">প্রতি মাসে আমরা কাজের অগ্রগতির রিপোর্ট প্রদান করি এবং যে কোনো প্রয়োজনে সার্বক্ষণিক সাপোর্ট দিয়ে থাকি।</p>

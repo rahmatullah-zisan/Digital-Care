@@ -26,6 +26,18 @@
       body {
         font-family: "Hind Siliguri", sans-serif;
       }
+
+      /* Scroll Animation CSS */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800">
