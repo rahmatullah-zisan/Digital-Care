@@ -26,18 +26,11 @@
 
         #industry-text {
             display: inline-block;
-            opacity: 1;
-            transition: opacity 0.5s ease, transform 0.5s ease;
+            transition: transform 0.6s;
         }
 
-        #industry-text.fade-out {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-
-        #industry-text.fade-in {
-            opacity: 1;
-            transform: translateY(0);
+        #industry-text.flip {
+            transform: rotateX(360deg);
         }
 
         /* Scroll Animation CSS (FIXED) */
