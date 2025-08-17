@@ -8,16 +8,21 @@
     <style>
         body { font-family: 'Hind Siliguri', sans-serif; }
 
-        /* Scroll Animation CSS */
+        /* Scroll Animation CSS (FIXED) */
         .animate-on-scroll {
             opacity: 0;
-            transform: translateY(30px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(30px);
         }
 
         .animate-on-scroll.is-visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* This ensures that transform utilities from Tailwind are correctly applied with the animation */
+        .animate-on-scroll.is-visible {
+            transform: var(--tw-transform, translateY(0));
         }
     </style>
     <title>আমাদের ব্লগ | ডিজিটাল কেয়ার সলিউশনস</title>
