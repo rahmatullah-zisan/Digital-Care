@@ -164,42 +164,19 @@ if (siteName && header && footer) {
     updateSiteNameColor();
 }
 
-// Dynamic industry text typing effect on homepage
+// Dynamic industry text flip on homepage
 const industryText = document.getElementById('industry-text');
 if (industryText) {
     const words = ['ব্যবসার', 'রেস্টুরেন্টের', 'হাসপাতালের', 'ই-কমার্সের'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
-
-    industryText.textContent = '';
-
-    const type = () => {
-        const current = words[wordIndex];
-
-        if (!deleting) {
-            industryText.textContent = current.substring(0, charIndex + 1);
-            charIndex++;
-
-            if (charIndex === current.length) {
-                deleting = true;
-                setTimeout(type, 1500); // Pause at full word
-                return;
-            }
-        } else {
-            industryText.textContent = current.substring(0, charIndex - 1);
-            charIndex--;
-
-            if (charIndex === 0) {
-                deleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-            }
-        }
-
-        setTimeout(type, deleting ? 100 : 150);
-    };
-
-    type();
+    let index = 0;
+    setInterval(() => {
+        industryText.classList.add('flip');
+        setTimeout(() => {
+            index = (index + 1) % words.length;
+            industryText.textContent = words[index];
+            industryText.classList.remove('flip');
+        }, 600);
+    }, 2000);
 }
 
 // Scroll Animation Logic
