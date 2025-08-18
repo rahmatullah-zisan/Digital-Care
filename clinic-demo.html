@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="bn" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="২৪/৭ AI রিসেপশনিস্ট দ্বারা ক্লিনিক সাপোর্ট – তাত্ক্ষণিক রিপ্লাই, অ্যাপয়েন্টমেন্ট বুকিং ও স্মার্ট রিমাইন্ডার"
+    />
+    <title>ক্লিনিক ডেমো - ডিজিটাল কেয়ার সলিউশনস</title>
+    <link rel="icon" type="image/webp" href="/Digital care favicon.webp" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Hind Siliguri", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header / Navbar -->
+    <header
+      class="bg-white/30 backdrop-blur-md border border-white/20 shadow-sm sticky top-0 z-50"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          id="site-name"
+          class="text-2xl font-bold text-teal-600"
+          >ডিজিটাল কেয়ার</a
+        >
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="about.html" class="text-gray-600 hover:text-teal-600"
+            >আমাদের সম্পর্কে</a
+          >
+          <a href="services.html" class="text-gray-600 hover:text-teal-600"
+            >সার্ভিসসমূহ</a
+          >
+          <a href="index.html#pricing" class="text-gray-600 hover:text-teal-600"
+            >সলিউশন</a
+          >
+          <a href="blog.html" class="text-gray-600 hover:text-teal-600">ব্লগ</a>
+          <a href="affiliate.html" class="text-gray-600 hover:text-teal-600"
+            >অ্যাফিলিয়েট</a
+          >
+          <a href="index.html#process" class="text-gray-600 hover:text-teal-600"
+            >আমাদের প্রক্রিয়া</a
+          >
+          <a href="index.html#faq" class="text-gray-600 hover:text-teal-600"
+            >জিজ্ঞাসা</a
+          >
+          <a
+            href="index.html#contact"
+            class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+            >যোগাযোগ করুন</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="menu-btn"
+            class="text-gray-600 focus:outline-none"
+            aria-label="মেনু খুলুন বা বন্ধ করুন"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+        <a href="about.html" class="block text-gray-600 hover:text-teal-600"
+          >আমাদের সম্পর্কে</a
+        >
+        <a href="services.html" class="block text-gray-600 hover:text-teal-600"
+          >সার্ভিসসমূহ</a
+        >
+        <a
+          href="index.html#pricing"
+          class="block text-gray-600 hover:text-teal-600"
+          >সলিউশন</a
+        >
+        <a href="blog.html" class="block text-gray-600 hover:text-teal-600"
+          >ব্লগ</a
+        >
+        <a href="affiliate.html" class="block text-gray-600 hover:text-teal-600"
+          >অ্যাফিলিয়েট</a
+        >
+        <a
+          href="index.html#process"
+          class="block text-gray-600 hover:text-teal-600"
+          >আমাদের প্রক্রিয়া</a
+        >
+        <a href="index.html#faq" class="block text-gray-600 hover:text-teal-600"
+          >জিজ্ঞাসা</a
+        >
+        <a
+          href="index.html#contact"
+          class="block bg-teal-500 text-white text-center px-4 py-2 rounded-full hover:bg-teal-600 transition duration-300"
+          >যোগাযোগ করুন</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="bg-white py-16">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            ২৪/৭ AI রিসেপশনিস্ট for Clinics
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 mb-8">
+            ৫ মিনিটে রিপ্লাই | তাত্ক্ষণিক অ্যাপয়েন্টমেন্ট বুকিং | নো-শো কমানোর
+            স্মার্ট রিমাইন্ডার
+          </p>
+          <p class="text-gray-700 mb-8 max-w-3xl mx-auto">
+            ডিজিটাল কেয়ার আপনার ক্লিনিকের ইনবক্স, ওয়েবসাইট ও
+            WhatsApp/Messenger–এ ২৪/৭ রোগী সাপোর্ট চালু করে—যাতে সম্ভাব্য রোগী
+            একটিও হারিয়ে না যায়।
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="/clinic-demo"
+              class="bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600"
+              >ডেমো দেখুন →</a
+            >
+            <a
+              href="/book-call"
+              class="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700"
+              >১৫-মিনিট কল বুক করুন →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- কেন দরকার -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">কেন দরকার</h2>
+          <ul class="list-disc pl-6 space-y-2 mb-6">
+            <li>
+              ফোন ব্যস্ত বা অফ-আওয়ারে
+              <span class="font-semibold">রোগীরা উত্তর পায় না</span>
+            </li>
+            <li>
+              ইনবক্স/কমেন্টে
+              <span class="font-semibold">একই প্রশ্ন বারবার</span>, স্টাফের সময়
+              নষ্ট
+            </li>
+            <li>
+              <span class="font-semibold">রিমাইন্ডার না থাকায়</span> নো-শো বাড়ে,
+              সিডিউল ফাঁকা পড়ে থাকে
+            </li>
+          </ul>
+          <p class="text-gray-700">
+            সমাধান: AI রিসেপশনিস্ট আপনার হয়ে সঙ্গে সঙ্গে রিপ্লাই দেয়,
+            অ্যাপয়েন্টমেন্ট নেয়, স্মরণ করায়—আর দরকার হলে স্টাফের কাছে হ্যান্ড-অফ
+            করে।
+          </p>
+        </div>
+      </section>
+
+      <!-- আপনি কী পাবেন -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">আপনি কী পাবেন</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <span class="font-semibold">তাত্ক্ষণিক রিপ্লাই (≤৫ মিনিট):</span>
+              OPD সময়, ডাক্তার অ্যাভেইলেবিলিটি, টেস্ট/ফি, লোকেশন—সব প্রশ্নের
+              উত্তর ২৪/৭
+            </li>
+            <li>
+              <span class="font-semibold">অ্যাপয়েন্টমেন্ট বুকিং:</span> রোগীর
+              নাম/মোবাইল/ডাক্তার/সময় নিয়ে কনফার্মেশন পাঠায়
+            </li>
+            <li>
+              <span class="font-semibold">স্মার্ট রিমাইন্ডার:</span> T-24h ও
+              T-2h অটো রিমাইন্ডার (WhatsApp/SMS) →
+              <span class="font-semibold">নো-শো কমে</span>
+            </li>
+            <li>
+              <span class="font-semibold">হিউম্যান হ্যান্ড-অফ:</span> জটিল কেসে
+              স্টাফে এসকেলেশন
+            </li>
+            <li>
+              <span class="font-semibold">রিপোর্টিং ও প্রুফ:</span> GA4 + Meta
+              Pixel/Conversions API—Lead, Schedule, Call/WhatsApp Click
+              ট্র্যাকিং
+            </li>
+            <li>
+              <span class="font-semibold">বাংলা + English:</span> রোগীর ভাষায়
+              কথোপকথন
+            </li>
+          </ul>
+          <div class="mt-8">
+            <a
+              href="/start-trial"
+              class="inline-block bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600"
+              >৭-দিন ফ্রি ট্রায়াল শুরু করুন →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ফলাফল -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">ফলাফল (যা আমরা দেখাতে পারি)</h2>
+          <h3 class="text-2xl font-semibold mb-4">
+            লাইভ ড্যাশবোর্ড স্ন্যাপশট:
+          </h3>
+          <ul class="list-disc pl-6 space-y-2 mb-4">
+            <li>
+              গত ৭ দিনে: <code>appointment_request</code> __ |
+              <code>lead_submit</code> __ | <code>call_click</code> __ |
+              <code>whatsapp_click</code> __
+            </li>
+            <li>গড় রেসপন্স টাইম: __ মিনিট</li>
+            <li>নো-শো হার: আগের __% → এখন __%</li>
+          </ul>
+          <p class="text-gray-700">
+            প্রুফ প্যাক: GA4 রিপোর্ট + Meta Events লগ + রিমাইন্ডার ডেলিভারি/রিড
+            রেট + ৬০-সেকেন্ড ডেমো ভিডিও
+          </p>
+        </div>
+      </section>
+
+      <!-- কীভাবে কাজ করে -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">কীভাবে কাজ করে (৩ ধাপে লাইভ)</h2>
+          <ol class="list-decimal pl-6 space-y-2 mb-6">
+            <li>
+              <span class="font-semibold">Set up (২৪–৪৮ ঘন্টা):</span> আপনার
+              ক্লিনিকের তথ্য, ডাক্তারের সময়সূচি, ফি, লোকেশন, জরুরি নির্দেশনা
+            </li>
+            <li>
+              <span class="font-semibold">Go live:</span> ওয়েবসাইট উইজেট +
+              WhatsApp/Messenger সংযোগ, কল/WhatsApp বোতাম
+            </li>
+            <li>
+              <span class="font-semibold">Measure & Improve:</span> GA4/Pixel
+              ডেটা দেখে FAQ fine‑tune, রিমাইন্ডার অপ্টিমাইজ
+            </li>
+          </ol>
+          <a
+            href="/clinic-demo"
+            class="inline-block bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600"
+            >এখনই ডেমো চালু করুন →</a
+          >
+        </div>
+      </section>
+
+      <!-- ফ্লো -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">ফ্লো (চ্যাটে রোগী যা দেখে)</h2>
+          <p class="mb-4">
+            <span class="font-semibold"
+              >“হাই! আমি ক্লিনিকের AI সহকারী। আপনি কী করতে চান?”</span
+            >
+          </p>
+          <ol class="list-decimal pl-6 space-y-2 mb-6">
+            <li>ডাক্তারের সময়/ফি</li>
+            <li>অ্যাপয়েন্টমেন্ট বুক</li>
+            <li>লোকেশন/ডিরেকশন</li>
+            <li>স্টাফের সাথে কথা বলবো</li>
+          </ol>
+          <p class="mb-4">
+            <span class="font-semibold">মিনি-ফর্ম (অ্যাপয়েন্টমেন্ট):</span> নাম,
+            মোবাইল, পছন্দের তারিখ/সময়, বিভাগ/ডাক্তার → কনফার্মেশন
+          </p>
+          <div class="space-y-2">
+            <p><span class="font-semibold">রিমাইন্ডার মেসেজ:</span></p>
+            <p>
+              T-24h: “আগামীকাল [সময়] আপনার [বিভাগ] অ্যাপয়েন্টমেন্ট। আসতে পারবেন
+              তো?”
+            </p>
+            <p>T-2h: “দুই ঘন্টা পর আপনার অ্যাপয়েন্টমেন্ট। লোকেশন: [লিংক]”</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ইন্টিগ্রেশনস -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">ইন্টিগ্রেশনস</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Facebook Page & Messenger</li>
+            <li>WhatsApp Business</li>
+            <li>Website Chat Widget</li>
+            <li>Google Maps (লোকেশন/ডিরেকশন)</li>
+            <li>Calendar/Email/SMS (রিমাইন্ডার)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- প্রাইসিং -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-6">প্রাইসিং (সিম্পল)</h2>
+          <p class="mb-6">
+            <span class="font-semibold">৭-দিন ফ্রি ট্রায়াল</span>—ফল দেখার পর
+            বেছে নিন:
+          </p>
+          <ul class="list-disc pl-6 text-left inline-block space-y-2 mb-6">
+            <li>
+              <span class="font-semibold">Basic:</span> ২৪/৭ রিপ্লাই +
+              অ্যাপয়েন্টমেন্ট ফ্লো
+            </li>
+            <li>
+              <span class="font-semibold">Standard:</span> + রিমাইন্ডার +
+              WhatsApp টেমপ্লেট
+            </li>
+            <li>
+              <span class="font-semibold">Premium:</span> + কাস্টম ইন্টিগ্রেশন +
+              রিপোর্টিং ড্যাশবোর্ড
+            </li>
+          </ul>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="/clinic-demo"
+              class="bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600"
+              >ডেমো দেখুন</a
+            >
+            <a
+              href="/book-call"
+              class="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700"
+              >কনসাল্ট বুক করুন</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- সেফটি ও নীতিমালা -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">সেফটি ও নীতিমালা</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              জরুরি স্বাস্থ্য সমস্যায়
+              <span class="font-semibold">১৬২৬৩</span>/ক্লিনিকে সরাসরি কল করুন
+            </li>
+            <li>
+              চ্যাটে
+              <span class="font-semibold">সংবেদনশীল মেডিকেল রিপোর্ট</span> শেয়ার
+              না করাই ভালো; প্রয়োজনে স্টাফ নিরাপদ চ্যানেলে নিতে সাহায্য করবে
+            </li>
+            <li>
+              আমরা <span class="font-semibold">Minimal Data</span> রাখি;
+              শুধুমাত্র সার্ভিস দেওয়ার জন্য প্রয়োজনীয় তথ্য ব্যবহার করা হয়
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-16 bg-gray-50" id="faq">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">FAQ</h2>
+          <div class="space-y-6">
+            <div>
+              <p class="font-semibold">প্র: ২৪/৭ রিপ্লাই কি সত্যি?</p>
+              <p>উ: হ্যাঁ—অফ-আওয়ারসহ সবসময়। জটিল কেস হলে স্টাফে হ্যান্ড-অফ।</p>
+            </div>
+            <div>
+              <p class="font-semibold">প্র: কনফার্মেশন কে করে—বট নাকি স্টাফ?</p>
+              <p>
+                উ: আপনার প্রক্রিয়া অনুযায়ী—অটো কনফার্ম/স্টাফ ভেরিফাই, দুইভাবেই
+                সেটআপ করা যায়।
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold">প্র: রিমাইন্ডার কি WhatsApp–এ যাবে?</p>
+              <p>উ: WhatsApp/SMS—যেটা আপনার জন্য সুবিধাজনক।</p>
+            </div>
+            <div>
+              <p class="font-semibold">প্র: প্রাইভেসি?</p>
+              <p>
+                উ: আমরা কমতম তথ্য নেই, ট্রায়াল/লাইভ—দুটিতেই আপনার ডেটা আপনার
+                নিয়ন্ত্রণে।
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="py-16 bg-teal-600 text-white text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-6">
+            আপনার ক্লিনিকের জন্য ৭ দিনে লাইভ প্রুফ দেখাই—লিড/বুকিং বাড়বে, নো-শো
+            কমবে।
+          </h2>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="/start-trial"
+              class="bg-white text-teal-600 px-6 py-3 rounded-full hover:bg-gray-100"
+              >ফ্রি ট্রায়াল শুরু করুন</a
+            >
+            <a
+              href="/book-call"
+              class="bg-teal-800 text-white px-6 py-3 rounded-full hover:bg-teal-700"
+              >১৫-মিনিট কল বুক করুন</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">ডিজিটাল কেয়ার সলিউশনস</h3>
+            <p class="text-gray-400">
+              ক্লিনিক ও হাসপাতালের জন্য আধুনিক ডিজিটাল সলিউশন।
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">দ্রুত লিঙ্ক</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="about.html" class="hover:text-white"
+                  >আমাদের সম্পর্কে</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-white">সার্ভিসসমূহ</a>
+              </li>
+              <li>
+                <a href="index.html#pricing" class="hover:text-white">সলিউশন</a>
+              </li>
+              <li>
+                <a href="index.html#process" class="hover:text-white"
+                  >আমাদের প্রক্রিয়া</a
+                >
+              </li>
+              <li>
+                <a href="index.html#faq" class="hover:text-white"
+                  >সাধারণ জিজ্ঞাসা</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">যোগাযোগ</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-2"></i>ডিকেপি রোড,
+                বরগুনা
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-2"></i>01639590392
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-2"></i
+                >rahmatullahzisan@gmail.com
+              </li>
+            </ul>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin-in fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-6 text-center text-gray-500">
+          <p>
+            &copy; <span id="currentYear"></span> ডিজিটাল কেয়ার সলিউশনস।
+            সর্বস্বত্ব সংরক্ষিত।
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
