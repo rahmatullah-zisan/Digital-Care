@@ -26,11 +26,11 @@
 
         #industry-text {
             display: inline-block;
-            white-space: nowrap;
+            transition: transform 0.6s;
         }
 
-        .typed-cursor {
-            color: #0d9488;
+        #industry-text.flip {
+            transform: rotateX(360deg);
         }
 
         /* Scroll Animation CSS (FIXED) */
@@ -100,7 +100,7 @@
         <section class="bg-white py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-                    আপনার <span id="industry-text" class="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full"></span> <span class="text-teal-600">ডিজিটাল রূপান্তর</span> এখানেই শুরু
+                    আপনার <span id="industry-text" class="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full">ব্যবসার</span> <span class="text-teal-600">ডিজিটাল রূপান্তর</span> এখানেই শুরু
                 </h1>
                 <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
                     আমরা আপনার ব্যবসার জন্য আধুনিক ওয়েবসাইট, ই-কমার্স সলিউশন, ফেসবুক অটোমেশন এবং ২৪/৭ কাস্টমার সার্ভিস AI এজেন্ট তৈরি করি, যা গ্রাহকদের সাথে আপনার যোগাযোগ সহজ করে এবং ব্র্যান্ড ভ্যালু বাড়ায়।
@@ -522,7 +522,6 @@
         </div>
     </footer>
 
-     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
      <script src="main.js" defer></script>
 
 </body>
