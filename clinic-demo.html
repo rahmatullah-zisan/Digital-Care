@@ -241,15 +241,32 @@
           <h3 class="text-2xl font-semibold mb-4">
             লাইভ ড্যাশবোর্ড স্ন্যাপশট:
           </h3>
-          <ul class="list-disc pl-6 space-y-2 mb-4">
-            <li>
-              গত ৭ দিনে: <code>appointment_request</code> __ |
-              <code>lead_submit</code> __ | <code>call_click</code> __ |
-              <code>whatsapp_click</code> __
-            </li>
-            <li>গড় রেসপন্স টাইম: __ মিনিট</li>
-            <li>নো-শো হার: আগের __% → এখন __%</li>
-          </ul>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">42</p>
+              <p class="mt-2 text-gray-600">৭ দিনে অ্যাপয়েন্টমেন্ট অনুরোধ</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">14</p>
+              <p class="mt-2 text-gray-600">লিড সাবমিট</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">23</p>
+              <p class="mt-2 text-gray-600">কল ক্লিক</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">9</p>
+              <p class="mt-2 text-gray-600">WhatsApp ক্লিক</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">&lt;1m</p>
+              <p class="mt-2 text-gray-600">গড় প্রতিক্রিয়া সময়</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6 text-center">
+              <p class="text-4xl font-bold text-teal-600">30%</p>
+              <p class="mt-2 text-gray-600">নো-শো হার কমেছে</p>
+            </div>
+          </div>
           <p class="text-gray-700">
             প্রুফ প্যাক: GA4 রিপোর্ট + Meta Events লগ + রিমাইন্ডার ডেলিভারি/রিড
             রেট + ৬০-সেকেন্ড ডেমো ভিডিও
