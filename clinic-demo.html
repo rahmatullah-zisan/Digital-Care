@@ -308,35 +308,42 @@
       </section>
 
       <!-- ফ্লো -->
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-3xl font-bold mb-6">ফ্লো (চ্যাটে রোগী যা দেখে)</h2>
-          <p class="mb-4">
-            <span class="font-semibold"
-              >“হাই! আমি ক্লিনিকের AI সহকারী। আপনি কী করতে চান?”</span
-            >
-          </p>
-            <ol
-              class="list-decimal list-inside grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 text-left"
-            >
-              <li class="bg-white rounded-lg shadow p-6">ডাক্তারের সময়/ফি</li>
-              <li class="bg-white rounded-lg shadow p-6">অ্যাপয়েন্টমেন্ট বুক</li>
-              <li class="bg-white rounded-lg shadow p-6">লোকেশন/ডিরেকশন</li>
-              <li class="bg-white rounded-lg shadow p-6">স্টাফের সাথে কথা বলবো</li>
-            </ol>
-          <p class="mb-4">
-            <span class="font-semibold">মিনি-ফর্ম (অ্যাপয়েন্টমেন্ট):</span> নাম,
-            মোবাইল, পছন্দের তারিখ/সময়, বিভাগ/ডাক্তার → কনফার্মেশন
-          </p>
-          <div class="space-y-2">
-            <p><span class="font-semibold">রিমাইন্ডার মেসেজ:</span></p>
-            <p class="bg-white rounded-lg shadow p-6">
-              T-24h: “আগামীকাল [সময়] আপনার [বিভাগ] অ্যাপয়েন্টমেন্ট। আসতে পারবেন
-              তো?”
-            </p>
-            <p class="bg-white rounded-lg shadow p-6">
-              T-2h: “দুই ঘন্টা পর আপনার অ্যাপয়েন্টমেন্ট। লোকেশন: [লিংক]”
-            </p>
+      <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold">রোগীর অভিজ্ঞতা কেমন হবে?</h2>
+            <p class="text-gray-600 mt-2">আমাদের AI সহকারীর সাথে রোগীর কথোপকথনের একটি নমুনা</p>
+          </div>
+
+          <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex justify-start mb-4">
+              <div class="bg-teal-500 text-white p-4 rounded-lg max-w-xs">
+                <p class="font-bold">AI সহকারী</p>
+                <p>হাই! আমি ক্লিনিকের AI সহকারী। আপনাকে কীভাবে সাহায্য করতে পারি?</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <button class="bg-gray-200 text-gray-800 text-left p-3 rounded-lg hover:bg-teal-100 transition-colors">
+                <i class="fas fa-user-md mr-2"></i> ডাক্তারের সময়/ফি
+              </button>
+              <button class="bg-gray-200 text-gray-800 text-left p-3 rounded-lg hover:bg-teal-100 transition-colors">
+                <i class="fas fa-calendar-plus mr-2"></i> অ্যাপয়েন্টমেন্ট বুক
+              </button>
+              <button class="bg-gray-200 text-gray-800 text-left p-3 rounded-lg hover:bg-teal-100 transition-colors">
+                <i class="fas fa-map-marker-alt mr-2"></i> লোকেশন/ডিরেকশন
+              </button>
+              <button class="bg-gray-200 text-gray-800 text-left p-3 rounded-lg hover:bg-teal-100 transition-colors">
+                <i class="fas fa-headset mr-2"></i> স্টাফের সাথে কথা
+              </button>
+            </div>
+            
+            <div class="flex justify-start">
+              <div class="bg-teal-500 text-white p-4 rounded-lg max-w-xs">
+                <p class="font-bold">AI সহকারী (রিমাইন্ডার)</p>
+                <p>আপনার অ্যাপয়েন্টমেন্টের ২ ঘন্টা বাকি। লোকেশন: [Google Maps Link]</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
