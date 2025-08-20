@@ -1,6 +1,38 @@
 // Set current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+// Initialize smooth scrolling and animations
+document.addEventListener('DOMContentLoaded', () => {
+    // Lenis smooth scrolling
+    const lenis = new Lenis();
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // GSAP hero text animation
+    if (typeof gsap !== 'undefined') {
+        gsap.from('#hero-title', { opacity: 0, y: 50, duration: 1 });
+    }
+
+    // Lottie animation setup
+    const heroAnimationContainer = document.getElementById('hero-animation');
+    if (typeof lottie !== 'undefined' && heroAnimationContainer) {
+        const animation = lottie.loadAnimation({
+            container: heroAnimationContainer,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://assets7.lottiefiles.com/packages/lf20_jcikwtux.json'
+        });
+
+        animation.addEventListener('DOMLoaded', () => {
+            heroAnimationContainer.classList.remove('hidden');
+        });
+    }
+});
+
 // Mobile Menu Toggle
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
