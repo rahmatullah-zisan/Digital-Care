@@ -18,12 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lottie animation setup
     if (typeof lottie !== 'undefined' && document.getElementById('hero-animation')) {
-        lottie.loadAnimation({
-            container: document.getElementById('hero-animation'),
+        const heroAnimation = document.getElementById('hero-animation');
+        const animation = lottie.loadAnimation({
+            container: heroAnimation,
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: 'https://assets7.lottiefiles.com/packages/lf20_jcikwtux.json'
+        });
+
+        animation.addEventListener('DOMLoaded', () => {
+            heroAnimation.classList.remove('hidden');
         });
     }
 });
