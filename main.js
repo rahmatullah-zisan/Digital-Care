@@ -179,41 +179,44 @@ if (industryText) {
     }, 2000);
 }
 
-// Scroll Animation Logic
-document.addEventListener("DOMContentLoaded", () => {
-    const scrollElements = document.querySelectorAll(".animate-on-scroll");
+// Smooth scrolling and animation using Lenis & GSAP
+if (typeof Lenis !== 'undefined') {
+    const lenis = new Lenis();
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+}
 
-    const elementInView = (el, dividend = 1) => {
-        const elementTop = el.getBoundingClientRect().top;
-        return (
-            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
-    };
-
-    const displayScrollElement = (element) => {
-        element.classList.add("is-visible");
-    };
-
-    const hideScrollElement = (element) => {
-        element.classList.remove("is-visible");
-    };
-
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el, 1.25)) {
-                displayScrollElement(el);
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.animate-on-scroll').forEach(el => {
+        gsap.from(el, {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 80%'
             }
-            // Optional: To hide the element again when it goes out of view
-            // else {
-            //     hideScrollElement(el);
-            // }
         });
-    };
-
-    window.addEventListener("scroll", () => {
-        handleScrollAnimation();
     });
+    ScrollTrigger.create({
+        trigger: '#process',
+        pin: true,
+        start: 'top top',
+        end: '+=500'
+    });
+}
 
-    // Trigger on load
-    handleScrollAnimation();
-});
+// Hero Lottie animation
+if (typeof lottie !== 'undefined') {
+    lottie.loadAnimation({
+        container: document.getElementById('hero-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets9.lottiefiles.com/packages/lf20_u4yrau.json'
+    });
+}
