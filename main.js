@@ -217,3 +217,52 @@ document.addEventListener("DOMContentLoaded", () => {
     // Trigger on load
     handleScrollAnimation();
 });
+
+// Lenis smooth scrolling
+const lenis = new Lenis({
+    duration: 1.2,
+    smooth: true
+});
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// GSAP ScrollTrigger reveal and pin
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('section').forEach((sec) => {
+        if (!sec.classList.contains('pin-section')) {
+            gsap.from(sec, {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: sec,
+                    start: 'top 80%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        }
+    });
+
+    ScrollTrigger.create({
+        trigger: '.pin-section',
+        start: 'top top',
+        end: '+=100%',
+        pin: true
+    });
+}
+
+// Lottie hero animation
+if (typeof lottie !== 'undefined') {
+    lottie.loadAnimation({
+        container: document.getElementById('hero-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets2.lottiefiles.com/packages/lf20_x62chJ.json'
+    });
+}
