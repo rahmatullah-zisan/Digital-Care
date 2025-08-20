@@ -164,25 +164,35 @@ if (orderForm) {
     });
 }
 
-// Change site name color when header overlaps the contact section or footer
+// Change site name color when header overlaps teal sections or the footer
 const siteName = document.getElementById('site-name');
-const contactSection = document.getElementById('contact');
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
+const tealSections = document.querySelectorAll('section[class*="bg-teal"], footer[class*="bg-teal"]');
 
-if (siteName && header && footer) {
+if (siteName && header) {
     const defaultClass = 'text-teal-600';
     const overlapClass = 'text-white';
 
     function updateSiteNameColor() {
         const headerHeight = header.offsetHeight;
-        const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
-        const footerRect = footer.getBoundingClientRect();
+        let isOverlapping = false;
 
-        const inContact = contactRect ? (contactRect.top <= headerHeight && contactRect.bottom >= headerHeight) : false;
-        const inFooter = footerRect.top <= headerHeight && footerRect.bottom >= headerHeight;
+        tealSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < headerHeight && rect.bottom > 0) {
+                isOverlapping = true;
+            }
+        });
 
-        if (inContact || inFooter) {
+        if (!isOverlapping && footer) {
+            const footerRect = footer.getBoundingClientRect();
+            if (footerRect.top < headerHeight && footerRect.bottom > 0) {
+                isOverlapping = true;
+            }
+        }
+
+        if (isOverlapping) {
             siteName.classList.remove(defaultClass);
             siteName.classList.add(overlapClass);
         } else {
@@ -192,7 +202,7 @@ if (siteName && header && footer) {
     }
 
     window.addEventListener('scroll', updateSiteNameColor);
-    // Run on load in case user refreshes while on contact section or footer
+    // Run on load in case user refreshes while on a teal section or footer
     updateSiteNameColor();
 }
 
