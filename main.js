@@ -209,7 +209,7 @@ if (siteName && header) {
 // Dynamic industry text flip on homepage
 const industryText = document.getElementById('industry-text');
 if (industryText) {
-    const words = ['ব্যবসার', 'রেস্টুরেন্টের', 'হাসপাতালের', 'ই-কমার্সের'];
+    const words = ['ব্যবসার', 'রিসোর্টের', 'হাসপাতালের', 'ই-কমার্সের'];
     let index = 0;
     setInterval(() => {
         industryText.classList.add('flip');
