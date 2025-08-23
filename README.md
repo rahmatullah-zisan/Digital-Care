@@ -22,3 +22,14 @@ Update the `scriptURL` constant in `main.js` with your own Google Apps Script UR
 ## Deployment
 The project is configured for GitHub Pages with the custom domain defined in the `CNAME` file.
 
+## Bing IndexNow
+A GitHub Actions workflow automatically notifies Bing when HTML pages are added or updated. To enable it:
+
+1. Generate an IndexNow key and save it as `<key>.txt` in the repository root. Commit this file so it is served from `https://www.digitalcare.site/<key>.txt`.
+2. Add the same key as the `INDEXNOW_KEY` secret in the repository settings.
+3. Pushing changes to the `work` branch will trigger a workflow that submits modified URLs to Bing's IndexNow API.
+
+You can also run the script locally:
+```bash
+INDEXNOW_KEY=<your_key> node .github/scripts/indexnow.js
+```
