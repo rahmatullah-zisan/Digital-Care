@@ -33,3 +33,16 @@ html.dark a {
 html.dark a:hover {
   color: #0ea5e9;
 }
+
+/* FAQ buttons */
+html.dark .bg-gray-100 {
+  background-color: #334155 !important;
+}
+
+html.dark #faq button {
+  color: #e2e8f0;
+}
+
+html.dark #faq button:hover {
+  background-color: #475569;
+}
