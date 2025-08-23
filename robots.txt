@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
+# AI Search Bots
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Training Bots (Optional: Disallow if you don't want them to use your data for training)
+User-agent: GPTBot
+Disallow: /
+
 Sitemap: https://www.digitalcare.site/sitemap.xml
