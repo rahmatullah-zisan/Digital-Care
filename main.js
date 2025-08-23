@@ -1,8 +1,54 @@
+// Dark mode stylesheet and initial theme
+const darkModeStylesheet = document.createElement('link');
+darkModeStylesheet.rel = 'stylesheet';
+darkModeStylesheet.href = document.currentScript.src.replace(/main\.js$/, 'dark-mode.css');
+document.head.appendChild(darkModeStylesheet);
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+}
+
 // Set current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 // Initialize smooth scrolling and animations
 document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('header nav');
+    const desktopMenu = nav ? nav.querySelector('.md\\:flex') : null;
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function updateToggleIcon(btn) {
+        if (!btn) return;
+        btn.innerHTML = document.documentElement.classList.contains('dark') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    }
+
+    function toggleTheme() {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        updateToggleIcon(desktopToggle);
+        updateToggleIcon(mobileToggle);
+    }
+
+    let desktopToggle;
+    if (desktopMenu) {
+        desktopToggle = document.createElement('button');
+        desktopToggle.id = 'theme-toggle';
+        desktopToggle.className = 'ml-4 text-gray-600 hover:text-teal-600';
+        desktopMenu.appendChild(desktopToggle);
+        desktopToggle.addEventListener('click', toggleTheme);
+    }
+
+    let mobileToggle;
+    if (mobileMenu) {
+        mobileToggle = document.createElement('button');
+        mobileToggle.className = 'block text-gray-600 hover:text-teal-600';
+        mobileMenu.appendChild(mobileToggle);
+        mobileToggle.addEventListener('click', toggleTheme);
+    }
+
+    updateToggleIcon(desktopToggle);
+    updateToggleIcon(mobileToggle);
+
     // Lenis smooth scrolling
     const lenis = new Lenis();
     function raf(time) {
