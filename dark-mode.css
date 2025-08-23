@@ -1,0 +1,25 @@
+/* Dark mode overrides */
+html.dark body {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+html.dark header {
+  background-color: rgba(31,41,55,0.3);
+  border-color: rgba(31,41,55,0.2);
+}
+html.dark .bg-white {
+  background-color: #374151 !important;
+}
+html.dark .bg-gray-50,
+html.dark .bg-slate-50 {
+  background-color: #1f2937 !important;
+}
+html.dark .text-gray-800 {
+  color: #f9fafb !important;
+}
+html.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+html.dark a {
+  color: #93c5fd;
+}
