@@ -46,3 +46,22 @@ html.dark #faq button {
 html.dark #faq button:hover {
   background-color: #475569;
 }
+
+/* Primary Buttons */
+html.dark .bg-teal-500 {
+  background-color: #0d9488 !important; /* Teal-600 */
+  color: #f0fdfa !important; /* Teal-50 */
+}
+html.dark .bg-teal-500:hover {
+  background-color: #0f766e !important; /* Teal-700 */
+}
+
+/* Secondary/Bordered Buttons */
+html.dark .border-teal-500 {
+  border-color: #2dd4bf !important; /* Teal-400 */
+  color: #2dd4bf !important; /* Teal-400 */
+}
+html.dark .border-teal-500:hover {
+  background-color: #2dd4bf !important; /* Teal-400 */
+  color: #0f172a !important; /* Dark background color */
+}
