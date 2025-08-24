@@ -1,8 +1,4 @@
-// Dark mode stylesheet and initial theme
-const darkModeStylesheet = document.createElement('link');
-darkModeStylesheet.rel = 'stylesheet';
-darkModeStylesheet.href = document.currentScript.src.replace(/main\.js$/, 'dark-mode.css');
-document.head.appendChild(darkModeStylesheet);
+// Set initial theme
 
 if (localStorage.getItem('theme') === 'dark') {
     document.documentElement.classList.add('dark');
